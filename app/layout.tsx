@@ -8,7 +8,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const protocol = incoming.get("x-forwarded-proto") ?? (host.startsWith("localhost") ? "http" : "https");
   const origin = `${protocol}://${host}`;
   const title = "J.R. Corvane | Epic Fantasy Author";
-  const description = "Enter the storm-lashed world of Blood of the Bound, the forthcoming epic fantasy debut from J.R. Corvane.";
+  const description = "Enter The Sundering Bloodlines with Blood of the Bound, the forthcoming epic fantasy debut from J.R. Corvane.";
   return {
     title,
     description,

@@ -27,7 +27,7 @@ export default function Home() {
 
       <section className="hero" id="top">
         <div className="hero-copy">
-          <p className="eyebrow"><span /> A new epic awakens</p>
+          <p className="eyebrow"><span /> Book one of The Sundering Bloodlines</p>
           <h1>The bond was forged.<br /><em>The storm remembers.</em></h1>
           <p className="lede">
             An ancient power. A world split at its foundations. Enter the storm-lashed realm of
@@ -51,11 +51,11 @@ export default function Home() {
           <div className="storm-beam" aria-hidden="true" />
           <div className="book-shadow" aria-hidden="true" />
           <img src="/blood-of-the-bound-cover.png" alt="Cover of Blood of the Bound by J.R. Corvane" />
-          <p><span>The debut novel</span> Currently in edits</p>
+          <p><span>The Sundering Bloodlines · Book One</span> Currently in edits</p>
         </div>
 
         <aside className="codex" aria-label="Book details">
-          <p className="vertical">Codex I · The first fracture</p>
+          <p className="vertical">The Sundering Bloodlines · Book I</p>
           <div className="codex-note">
             <span>01</span>
             <h2>The Bound are nearly revealed.</h2>
@@ -67,7 +67,7 @@ export default function Home() {
       <section className="author" id="author">
         <p className="eyebrow"><span /> Behind the veil</p>
         <h2>J.R. Corvane writes epic fantasy about the oaths that bind us—and what awakens when they break.</h2>
-        <p>More from the world of <i>Blood of the Bound</i> is coming as the novel moves through edits.</p>
+        <p><i>Blood of the Bound</i> begins <strong>The Sundering Bloodlines</strong>. More from the series is coming as the novel moves through edits.</p>
       </section>
     </main>
   );
