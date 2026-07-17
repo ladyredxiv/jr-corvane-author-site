@@ -24,13 +24,19 @@ nav a:hover { color:var(--lightning); }
 h1 { margin:0; font-size:clamp(66px,6.4vw,108px); font-weight:400; letter-spacing:-.055em; line-height:.86; text-wrap:balance; }
 h1 em { color:transparent; -webkit-text-stroke:1px #cbd6d988; font-weight:400; text-shadow:0 0 38px #8dd7f122; }
 .lede { color:#b8c0c2; max-width:580px; font-size:18px; line-height:1.75; margin:38px 0 28px; }
-.signup { display:flex; max-width:640px; min-height:58px; border-bottom:1px solid #8f9da366; }
-.signup input { flex:1; min-width:0; color:var(--silver); background:transparent; border:0; outline:0; padding:14px 6px; font:13px Arial,sans-serif; }
-.signup input::placeholder { color:#79868c; }
-.signup button { border:0; padding:0 24px; background:var(--gold); color:#090b0c; cursor:pointer; text-transform:uppercase; letter-spacing:.18em; font:700 10px Arial,sans-serif; transition:transform .25s,background .25s; }
-.signup button:hover { transform:translateY(-3px); background:#d2b574; }
-.signup button span { margin-left:12px; }
-.success { margin:auto 0; color:var(--lightning); font-style:italic; }
+.signup { max-width:640px; min-height:58px; }
+.signup .ml-embedded { width:100%; }
+.signup .ml-form-embedWrapper, .signup .ml-form-embedBody, .signup .ml-form-formContent { width:100%!important; max-width:none!important; margin:0!important; padding:0!important; background:transparent!important; }
+.signup .ml-form-embedContent, .signup .ml-form-successContent { color:var(--lightning)!important; font-family:Georgia,"Times New Roman",serif!important; }
+.signup .ml-form-embedContent h4, .signup .ml-form-embedContent p { display:none!important; }
+.signup .ml-form-formContent { display:flex!important; align-items:stretch!important; border-bottom:1px solid #8f9da366!important; }
+.signup .ml-form-fieldRow { flex:1!important; margin:0!important; }
+.signup .ml-field-group { padding:0!important; margin:0!important; }
+.signup input[type="email"] { width:100%!important; min-height:58px!important; color:var(--silver)!important; background:transparent!important; border:0!important; border-radius:0!important; outline:0!important; padding:14px 6px!important; font:13px Arial,sans-serif!important; box-shadow:none!important; }
+.signup input[type="email"]::placeholder { color:#79868c!important; }
+.signup .ml-form-embedSubmit { margin:0!important; }
+.signup button.primary { height:100%!important; min-height:58px!important; border:0!important; border-radius:0!important; padding:0 24px!important; background:var(--gold)!important; color:#090b0c!important; cursor:pointer!important; text-transform:uppercase!important; letter-spacing:.18em!important; font:700 10px Arial,sans-serif!important; transition:transform .25s,background .25s!important; white-space:nowrap!important; }
+.signup button.primary:hover { transform:translateY(-3px); background:#d2b574!important; }
 .privacy { color:#68767c; font:10px Arial,sans-serif; letter-spacing:.08em; }
 .book-stage { min-height:620px; display:flex; flex-direction:column; align-items:center; justify-content:center; position:relative; perspective:1300px; }
 .book-stage img { width:min(100%,350px); aspect-ratio:2/3; object-fit:cover; z-index:2; box-shadow:-24px 28px 55px #000c,0 0 0 1px #b99a5e88,0 0 95px #7bd3ff1c; transform:rotateY(-5deg) rotateZ(-1deg); transition:transform .5s ease; }
@@ -50,4 +56,4 @@ h1 em { color:transparent; -webkit-text-stroke:1px #cbd6d988; font-weight:400; t
 @keyframes pulse { 50% { opacity:.38; filter:blur(.6px); } }
 @media (prefers-reduced-motion:reduce) { * { scroll-behavior:auto!important; animation:none!important; transition:none!important; } }
 @media (max-width:1050px) { .hero { grid-template-columns:1.1fr .8fr; } .codex { display:none; } nav { gap:24px; } }
-@media (max-width:760px) { .site-header { grid-template-columns:1fr 40px; height:82px; margin:0 22px; } nav { display:none; } .hero { padding:58px 24px 80px; grid-template-columns:1fr; gap:56px; } h1 { font-size:clamp(58px,18vw,80px); } .lede { font-size:16px; } .signup { flex-direction:column; border:0; gap:10px; } .signup input { min-height:54px; border-bottom:1px solid #8f9da366; } .signup button { min-height:54px; } .book-stage { min-height:auto; } .book-stage img { width:min(76vw,330px); } .storm-beam { height:500px; } }
+@media (max-width:760px) { .site-header { grid-template-columns:1fr 40px; height:82px; margin:0 22px; } nav { display:none; } .hero { padding:58px 24px 80px; grid-template-columns:1fr; gap:56px; } h1 { font-size:clamp(58px,18vw,80px); } .lede { font-size:16px; } .signup .ml-form-formContent { flex-direction:column!important; border:0!important; gap:10px!important; } .signup input[type="email"] { border-bottom:1px solid #8f9da366!important; } .signup button.primary { width:100%!important; min-height:54px!important; } .book-stage { min-height:auto; } .book-stage img { width:min(76vw,330px); } .storm-beam { height:500px; } }

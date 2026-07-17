@@ -1,15 +1,4 @@
-"use client";
-
-import { FormEvent, useState } from "react";
-
 export default function Home() {
-  const [joined, setJoined] = useState(false);
-
-  function joinCircle(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    setJoined(true);
-  }
-
   return (
     <main>
       <div className="grain" aria-hidden="true" />
@@ -33,17 +22,9 @@ export default function Home() {
             An ancient power. A world split at its foundations. Enter the storm-lashed realm of
             <i> Blood of the Bound</i>, the forthcoming epic fantasy debut from J.R. Corvane.
           </p>
-          <form className="signup" id="dispatches" onSubmit={joinCircle}>
-            {joined ? (
-              <p className="success" role="status">Your name is marked. The first dispatch will find you.</p>
-            ) : (
-              <>
-                <label className="sr-only" htmlFor="email">Email address</label>
-                <input id="email" name="email" type="email" placeholder="Your raven’s destination (email)" required />
-                <button type="submit">Enter the inner circle <span aria-hidden="true">→</span></button>
-              </>
-            )}
-          </form>
+          <div className="signup" id="dispatches">
+            <div className="ml-embedded" data-form="5t5HRQ" />
+          </div>
           <p className="privacy">Rare dispatches from beyond the veil. No clutter. No broken oaths.</p>
         </div>
 
