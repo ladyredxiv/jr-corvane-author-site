@@ -1,6 +1,6 @@
 .page-shell{min-height:100vh;background:radial-gradient(circle at 82% 8%,#17334266,transparent 30%),linear-gradient(145deg,#05090c,#0a171e)}
 .page-header{height:88px;margin:0 4.2vw;border-bottom:1px solid #71818a22;display:grid;grid-template-columns:1fr auto 40px;align-items:center;gap:38px}
-.page-header nav{display:flex;gap:34px}.page-header .seal{width:34px;height:34px}
+.page-header nav{display:flex;gap:26px}.page-header .seal{width:34px;height:34px}
 .page-hero{padding:100px max(7vw,40px) 90px;min-height:560px;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(300px,.65fr);gap:8vw;align-items:center}
 .page-hero.single{grid-template-columns:minmax(0,900px);min-height:500px}.page-hero h1{font-size:clamp(62px,7.2vw,112px)}
 .page-hero .lede{font-size:19px;max-width:700px}.page-cover{display:flex;justify-content:center;position:relative}.page-cover:before{content:"";position:absolute;width:90%;aspect-ratio:1;border:1px solid #b99a5e44;border-radius:50%;top:15%;box-shadow:0 0 0 35px #b99a5e0a}.page-cover img{position:relative;width:min(100%,370px);box-shadow:-25px 30px 60px #000d,0 0 0 1px #b99a5e77}

@@ -74,6 +74,7 @@
 .magnet-copy { max-width: 900px; }
 .magnet-copy > p:not(.eyebrow) { color: #a6b1b5; max-width: 730px; font-size: 17px; line-height: 1.75; }
 .magnet-copy .dispatch-note { font: 12px/1.7 Arial, sans-serif; color: #718087; margin: 24px 0 28px; }
+.dispatch-preview{padding:110px max(7vw,40px) 125px;border-top:1px solid #71818a22;background:#070d11}.dispatch-preview h2{max-width:950px;margin:0 0 24px;font-size:clamp(42px,5vw,76px);font-weight:400;line-height:1.04;letter-spacing:-.04em}.dispatch-preview>p:not(.eyebrow):not(.dispatch-date){max-width:760px;color:#9eaaae;font-size:17px;line-height:1.8;margin:0 0 30px}.dispatch-preview .dispatch-date{color:#69777d;font:700 9px Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;margin:0 0 18px}
 
 @media (max-width: 760px) {
   h1 { font-size: clamp(52px, 16vw, 76px); }
@@ -83,4 +84,5 @@
   .series-grid { grid-template-columns: 1fr; gap: 18px; margin-top: 34px; }
   .magnet-number { font-size: 120px; }
   .novel-copy h2, .series h2, .magnet h2 { font-size: clamp(38px, 11vw, 56px); }
+  .dispatch-preview{padding:84px 24px}.dispatch-preview h2{font-size:clamp(38px,11vw,56px)}
 }
