@@ -40,3 +40,5 @@ next-env.d.ts
 /.wrangler/
 /outputs/
 /work/
+# Unpublished editorial material (the GitHub repository is public)
+drafts/
